@@ -1,0 +1,4 @@
+services:
+#    projet_symfony_cinema.example:
+#        class: ProjetSymfony\CinemaBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
