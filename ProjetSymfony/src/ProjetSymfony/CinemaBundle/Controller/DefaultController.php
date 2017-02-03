@@ -29,16 +29,5 @@ class DefaultController extends Controller
         );
     }
 
-    /**
-     * @Route("/film/{id}", requirements={"id": "\d+"}, name="page_film")
-     */
-    public function showAction($id)
-    {
-        $film = $this->getDoctrine()->getRepository('ProjetSymfonyCinemaBundle:Film')->find($id);
 
-        return $this->render(
-            'ProjetSymfonyCinemaBundle:Film:show.html.twig',
-            ['film' => $film]
-        );
-    }
 }
